@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f5f5;
+        }
+
+        .slider {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .slides {
+            display: flex;
+            width: 100%;
+        }
+
+        .slide {
+            width: 100%;
+            display: none;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+
+    <!-- Image Slider -->
+    <div class="slider">
+        <div class="slides">
+            <img src="1.jpeg" class="slide active">
+            <img src="2.jpeg" class="slide">
+            <img src="3.jpeg" class="slide">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function showSlide(i) {
+            slides.forEach(slide => slide.classList.remove("active"));
+            slides[i].classList.add("active");
+        }
+
+        function nextSlide() {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }
+
+        function prevSlide() {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        }
+
+        showSlide(index);
+    </script>
+
+    <!-- Travel Content Section -->
+    <div class="container">
+        <!-- Travel Information -->
+        <div class="content">
+            <h2>Plan Your Next Adventure</h2>
+            <p>
+                <strong>Welcome to Travel Explorer!</strong> Discover stunning destinations, travel tips, and the best itineraries for your next trip. Whether you're looking for tropical beaches, cultural experiences, or thrilling adventures, we've got you covered.
+            </p>
+            <p>
+                Need help planning your trip? Check out our <a href="#">detailed travel guides</a> and find the best destinations tailored to your style.
+            </p>
+        </div>
+
+        <!-- Recent Articles -->
+        <div class="recent-articles">
+            <h3>Latest Travel Guides</h3>
+            <ul>
+                <li>Top 10 Beach Destinations for 2025</li>
+                <li>How to Travel on a Budget</li>
+                <li>Must-Visit National Parks</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
