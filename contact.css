@@ -1,4 +1,4 @@
-header {
+    header {
     margin: 0px;
     margin-bottom: 1px;
     display: flex;
@@ -11,9 +11,9 @@ header {
     border-right: 0;
     border-bottom: 0px;
     background-color: #a9c0d9cd;
-}
+    }
 
-.header-main{
+    .header-main{
     margin: 5px;
     display: flex;
     flex-direction: row;
@@ -21,18 +21,19 @@ header {
     align-items: center;
     width: 100%;
     height: 85px;
-}
+    }   
 
-a{
+    a{
     font-size: x-large;
     margin: 20px;
     text-align: center;
-}
+    }
 
-#profile-img{
+    #profile-img{
     border-radius: 1000px;
-}
-body {
+    }
+    
+    body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
