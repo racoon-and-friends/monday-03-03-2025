@@ -59,3 +59,9 @@ footer{
 #title-info{
     font-size: x-large;
 }
+
+.section-3{
+    margin: 20px;
+    border-style: solid;
+    border-color: black;
+}
