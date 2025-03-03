@@ -10,7 +10,7 @@ header {
     border-left: 0;
     border-right: 0;
     border-bottom: 0px;
-    background-color: #a9c0d9cd;
+    background-color: #C8A2C8;
 }
 
 .header-main{
@@ -40,7 +40,7 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #a9c0d9cd;
+    background-color: #C8A2C8;
 }
 
 #RESOURCES{
@@ -61,7 +61,20 @@ footer{
 }
 
 .section-3{
-    margin: 20px;
+    background-color: rgba(215, 221, 250, 0.847);
+    margin: 15px;
     border-style: solid;
     border-color: black;
+}
+
+.s3-h1{
+    margin: 20px;
+}
+
+.s3-p{
+    margin: 20px;
+}
+
+body{
+    background-color: #C8A2C8;
 }
