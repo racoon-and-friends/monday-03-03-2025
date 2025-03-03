@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <img src="image/ctu image.png">
+    <style>
+        body{
+            justify-content: cover;
+            height: 300px;
+            background-image: url(image/vaca.png);
+            background-position: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            font-size: 70px;
+        }
+        .cards {
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }   
+        .card img {
+            width: 400px;
+            height: 250px;
+            object-fit: cover;
+        }    
+        .card {
+            border: none;
+            margin: 50px 10px 0px 10px;
+            background-color: #e9e9e9;
+            height: 500px;
+            width: 400px;
+            overflow: hiddens;
+            text-align: center;
+            box-shadow: 0 8px 8px -4px black;
+            transition: transform 0.5s;
+        }   
+        .card:hover{
+            transform:translateY(-15px)
+        } 
+        .card hr {
+            border-bottom: solid 3px C#000000;
+            width: 100px;
+            margin: 50px auto 50px auto;
+            }
+        
+        .card h4 {
+            font-weight: bold;
+            padding: 0px 20px;
+        }
+        .card h5{
+            font-weight: bold;
+            padding: 0px 20px;
+        }
+        .card p {
+            padding: 0 10px 20px;
+            color: #555;
+        }
+        
+        .team-section {
+            margin: 40px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+        
+        .team-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .team-table td {
+            padding: 10px;
+            vertical-align: top;
+            text-align: center;
+        }
+        
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 15px 0;
+        }
+        td{
+            color: black;
+            font-size: 30px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>About Us</h1>
+    
+    <div class="cards">
+        <div class="card">
+            <img src="image/flight safair.png" alt="Web Development">
+            <hr>
+            <h4>We Can Get You Anywehere You Want!</h4>
+            <p>Thanks to our global connections we have connecting flights to any country in the world !!
+            </p>
+        </div>
+        
+        <div class="card">
+            <img src="image/flight attendent.jpg" alt="IT Consulting">
+            <hr>
+            <h4>Our Staff</h4>
+            <p>Our Trustworthy Staff can ensure that you have the most comfatable and enjoyable traveling as you enjoy your flight.</p>
+        </div>
+        
+        <div class="card">
+            <img src="image/money.png" alt="Our Mission">
+            <hr>
+            <h4>Our Fair Prices</h4>
+            <p>We try to ensure that our prices remain fiar and affordable for everyone from all classes.</p>
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+        <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+        <p>
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Services</a> |
+            <a href="privacy.html">Privacy Policy</a>
+        </p>
+    </footer>
+    
+</body>
+</html>
