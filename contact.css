@@ -32,18 +32,18 @@
     #profile-img{
     border-radius: 1000px;
     }
-    
+
     body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ff00f7;
-    background-image: url();
+    background-image: url(contact_image/Pink\ tropical\ flowers.jpeg);
+    background-size: cover;
     text-align: center;
     }
     
     header {
-    background-color: #ff00f7;
+    background-color: #ff00f7b5;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -111,7 +111,7 @@
     footer {
     text-align: center;
     padding: 1em 0;
-    background-color: #ff00f7;
+    background-color: #ff00f700;
     color: white;
     margin-top: 2em;
     font-size: 0.9em;
